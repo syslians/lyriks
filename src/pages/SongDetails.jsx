@@ -27,7 +27,7 @@ const SongDetails = () => {
   // console.log("realsongdata:", songData);
   // console.log("songdata:", songData.artists[0].adamid);
 
-  if (isFetchingSongDetails || isFetchingRelatedSongs) return <Loader title="Searching song details" />;
+  if (isFetchingSongDetails || isFetchingRelatedSongs) return <Loader title="곡 상세정보 검색중.." />;
 
   if (error) return <Error />;
 
@@ -47,7 +47,7 @@ const SongDetails = () => {
               <p key={`lyrics-${line}-${i}`} className="text-gray-400 text-base my-1">{line}</p>
             ))
             : (
-              <p className="text-gray-400 text-base my-1">Sorry, No lyrics found!</p>
+              <p className="text-gray-400 text-base my-1">검색 결과가 없습니다!</p>
             )}
         </div>
       </div>

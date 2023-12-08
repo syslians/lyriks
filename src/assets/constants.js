@@ -18,8 +18,8 @@ export const genres = [
 ];
 
 export const links = [
-  { name: 'Discover', to: '/', icon: HiOutlineHome },
-  { name: 'Around You', to: '/around-you', icon: HiOutlinePhotograph },
-  { name: 'Top Artists', to: '/top-artists', icon: HiOutlineUserGroup },
-  { name: 'Top Charts', to: '/top-charts', icon: HiOutlineHashtag },
+  { name: '디스커버', to: '/', icon: HiOutlineHome },
+  { name: '딩신의 근처', to: '/around-you', icon: HiOutlinePhotograph },
+  { name: '탑 아티스트', to: '/top-artists', icon: HiOutlineUserGroup },
+  { name: '탑 차트', to: '/top-charts', icon: HiOutlineHashtag },
 ];

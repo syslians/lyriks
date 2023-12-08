@@ -6,7 +6,7 @@ const Loader = ({ title }) => (
   >
     <img src={loader} alt="loader" className="w-32 h-32 object-contain" />
     <h1 className="font-bold text-2xl text-white mt-2">
-      {title || 'Loading..'}
+      {title || '로딩중..'}
     </h1>
   </div>
 );

@@ -11,7 +11,7 @@ const Discover = () => {
 
   console.log('topchart:', data);
 
-  if (isFetching) return <Loader title="Loading songs..." />;
+  if (isFetching) return <Loader title="노래 로딩중..." />;
 
   if (error) return <Error />;
 
@@ -20,7 +20,7 @@ const Discover = () => {
   return (
     <div className="flex flex-col">
       <div className="w-full flex justify-between items-center sm:flex-row flex-col mt-4 mb-10">
-        <h2 className="font-bold text-3xl text-white text-left">Discover {genreTitle}
+        <h2 className="font-bold text-3xl text-white text-left">디스커버{genreTitle}
         </h2>
         <select
           onChange={(e) => dispatch(selectGenreListId(e.target.value))}

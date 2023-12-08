@@ -18,13 +18,13 @@ const AroundYou = () => {
       .finally(() => setLoading(false));
   }, [country]);
 
-  if (isFetching && loading) return <Loader title="Loading Songs around you..." />;
+  if (isFetching && loading) return <Loader title="당신의 국가의 차트를 로딩 입니다.." />;
 
   if (error && country !== '') return <Error />;
 
   return (
     <div className="flex flex-col">
-      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Around you <span className="font-black">{country}</span></h2>
+      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">당신의 근처<span className="font-black">{country}</span></h2>
 
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
         {data?.map((song, i) => (
